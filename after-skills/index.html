@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Recipe Box | 10 Cards Worth Keeping</title>
+    <meta
+      name="description"
+      content="Ten recipe cards pulled from the box: breakfasts, mains, sides and a dessert, each with the ingredients, timing, and a note scrawled in the margin."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Courier+Prime:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="lid">
+      <div class="container lid-row">
+        <a class="brand" href="#top">
+          <span class="pin" aria-hidden="true"></span>
+          The Recipe Box
+        </a>
+        <nav class="lid-nav" aria-label="Main navigation">
+          <a href="#featured">Featured</a>
+          <a href="#cards">The Cards</a>
+          <a href="#about">About the Box</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="featured">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="stamp-label">Filed under: dinner emergencies</p>
+            <h1>Ten cards worth&nbsp;stealing&nbsp;from the box.</h1>
+            <p class="lead">
+              No slideshow of glossy plates &mdash; just the cards we keep reaching for,
+              stains and all. Ingredients on the left, timing in the corner, and a note
+              in the margin from whoever cooked it last.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#cards">Flip through the box</a>
+              <a class="btn btn-ghost" href="#about">Why a box?</a>
+            </div>
+          </div>
+
+          <div class="hero-card-wrap" aria-hidden="true">
+            <div class="box-slot"></div>
+            <article class="index-card featured-card">
+              <span class="paperclip"></span>
+              <span class="stamp">Cook this&nbsp;tonight</span>
+              <div class="card-tab card-tab--mains"><span>Mains</span></div>
+              <div class="card-punch"></div>
+              <h2 class="card-title">Weeknight Chicken Piccata</h2>
+              <p class="card-meta">35 min &middot; serves 4 &middot; one skillet</p>
+              <p class="card-desc">
+                Thin cutlets, a squeeze of lemon, a fistful of capers. Done before the
+                rice is.
+              </p>
+              <p class="card-note">&ldquo;Double the sauce. Always.&rdquo;</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="rail" id="cards">
+        <div class="container">
+          <div class="rail-heading">
+            <p class="stamp-label">10 cards, 6 tabs</p>
+            <h2>Flip to a section</h2>
+            <p class="rail-sub">
+              Every card in the box gets filed behind a colored tab. Pick one, or leave
+              them all out on the table.
+            </p>
+          </div>
+
+          <div
+            class="tabs"
+            role="group"
+            aria-label="Filter recipes by category"
+          >
+            <button type="button" class="tab is-active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="tab" data-filter="breakfast" aria-pressed="false">Breakfast</button>
+            <button type="button" class="tab" data-filter="mains" aria-pressed="false">Mains</button>
+            <button type="button" class="tab" data-filter="vegetarian" aria-pressed="false">Vegetarian</button>
+            <button type="button" class="tab" data-filter="soups" aria-pressed="false">Soups</button>
+            <button type="button" class="tab" data-filter="sides" aria-pressed="false">Sides</button>
+            <button type="button" class="tab" data-filter="dessert" aria-pressed="false">Dessert</button>
+          </div>
+
+          <p class="tab-status" role="status" aria-live="polite"></p>
+
+          <div class="card-grid">
+            <article class="index-card" data-category="breakfast">
+              <div class="card-tab card-tab--breakfast"><span>Breakfast</span></div>
+              <div class="card-punch"></div>
+              <span class="card-icon" aria-hidden="true">&#129381;</span>
+              <h3 class="card-title">Buttermilk Pancake Stack</h3>
+              <p class="card-meta">20 min &middot; serves 3 &middot; griddle</p>
+              <p class="card-desc">
+                Tangy batter, a long rest, a hot pan. The kind that don&rsquo;t need syrup
+                but get it anyway.
+              </p>
+              <ul class="card-ingredients">
+                <li>Buttermilk</li>
+                <li>Baking soda</li>
+                <li>Melted butter</li>
+              </ul>
+              <p class="card-note card-note--rotate-l">&ldquo;Don&rsquo;t flip early!&rdquo;</p>
+            </article>
+
+            <article class="index-card" data-category="breakfast">
+              <div class="card-tab card-tab--breakfast"><span>Breakfast</span></div>
+              <div class="card-punch"></div>
+              <span class="card-icon" aria-hidden="true">&#127838;</span>
+              <h3 class="card-title">Skillet Shakshuka</h3>
+              <p class="card-meta">25 min &middot; serves 2 &middot; one pan</p>
+              <p class="card-desc">
+                Peppers and tomatoes stewed down, eggs cracked in at the last minute,
+                bread for mopping non&#8209;negotiable.
+              </p>
+              <ul class="card-ingredients">
+                <li>Crushed tomatoes</li>
+                <li>Bell pepper</li>
+                <li>Eggs</li>
+              </ul>
+              <p class="card-note card-note--rotate-r">&ldquo;Crusty bread, not toast.&rdquo;</p>
+            </article>
+
+            <article class="index-card" data-category="mains">
+              <div class="card-tab card-tab--mains"><span>Mains</span></div>
+              <div class="card-punch"></div>
+              <span class="card-icon" aria-hidden="true">&#128269;</span>
+              <h3 class="card-title">Smoky Beef Chili</h3>
+              <p class="card-meta">50 min &middot; serves 6 &middot; big pot</p>
+              <p class="card-desc">
+                Charred chiles, two kinds of beans, a square of dark chocolate no one
+                will guess is in there.
+              </p>
+              <ul class="card-ingredients">
+                <li>Ground beef</li>
+                <li>Kidney beans</li>
+                <li>Ancho chile</li>
+              </ul>
+              <p class="card-note card-note--rotate-l">&ldquo;Better on day two.&rdquo;</p>
+            </article>
+
+            <article class="index-card" data-category="mains">
+              <div class="card-tab card-tab--mains"><span>Mains</span></div>
+              <div class="card-punch"></div>
+              <span class="card-icon" aria-hidden="true">&#127794;</span>
+              <h3 class="card-title">Pan-Seared Salmon, Lemon Butter</h3>
+              <p class="card-meta">20 min &middot; serves 2 &middot; one skillet</p>
+              <p class="card-desc">
+                Skin down first, leave it alone, then a fast pan sauce while it rests
+                under foil.
+              </p>
+              <ul class="card-ingredients">
+                <li>Salmon fillets</li>
+                <li>Butter</li>
+                <li>Lemon</li>
+              </ul>
+              <p class="card-note card-note--rotate-r">&ldquo;Pat it dry &mdash; really dry.&rdquo;</p>
+            </article>
+
+            <article class="index-card" data-category="vegetarian">
+              <div class="card-tab card-tab--vegetarian"><span>Vegetarian</span></div>
+              <div class="card-punch"></div>
+              <span class="card-icon" aria-hidden="true">&#127805;</span>
+              <h3 class="card-title">Charred Corn &amp; Black Bean Tacos</h3>
+              <p class="card-meta">25 min &middot; serves 4 &middot; two pans</p>
+              <p class="card-desc">
+                Corn blackened dry in the pan first, then beans, lime, and whatever
+                hot sauce is closest.
+              </p>
+              <ul class="card-ingredients">
+                <li>Corn kernels</li>
+                <li>Black beans</li>
+                <li>Corn tortillas</li>
+              </ul>
+              <p class="card-note card-note--rotate-l">&ldquo;Char it more than feels right.&rdquo;</p>
+            </article>
+
+            <article class="index-card" data-category="vegetarian">
+              <div class="card-tab card-tab--vegetarian"><span>Vegetarian</span></div>
+              <div class="card-punch"></div>
+              <span class="card-icon" aria-hidden="true">&#127812;</span>
+              <h3 class="card-title">Creamy Mushroom Risotto</h3>
+              <p class="card-meta">40 min &middot; serves 4 &middot; needs stirring</p>
+              <p class="card-desc">
+                One ladle at a time, one glass of wine for the pot and one for the
+                cook.
+              </p>
+              <ul class="card-ingredients">
+                <li>Arborio rice</li>
+                <li>Mushrooms</li>
+                <li>Parmesan</li>
+              </ul>
+              <p class="card-note card-note--rotate-r">&ldquo;Stock stays warm on the back burner.&rdquo;</p>
+            </article>
+
+            <article class="index-card" data-category="soups">
+              <div class="card-tab card-tab--soups"><span>Soups</span></div>
+              <div class="card-punch"></div>
+              <span class="card-icon" aria-hidden="true">&#127837;</span>
+              <h3 class="card-title">Grandma's Chicken Noodle Soup</h3>
+              <p class="card-meta">1 hr &middot; serves 6 &middot; stockpot</p>
+              <p class="card-desc">
+                The one with the handwriting worn soft at the fold. Carrots cut thick,
+                noodles added last.
+              </p>
+              <ul class="card-ingredients">
+                <li>Whole chicken</li>
+                <li>Carrots &amp; celery</li>
+                <li>Egg noodles</li>
+              </ul>
+              <p class="card-note card-note--rotate-l">&ldquo;Skim the fat, save the fat.&rdquo;</p>
+            </article>
+
+            <article class="index-card" data-category="sides">
+              <div class="card-tab card-tab--sides"><span>Sides</span></div>
+              <div class="card-punch"></div>
+              <span class="card-icon" aria-hidden="true">&#129365;</span>
+              <h3 class="card-title">Garlic Herb Roasted Potatoes</h3>
+              <p class="card-meta">35 min &middot; serves 4 &middot; sheet pan</p>
+              <p class="card-desc">
+                Parboiled, roughed up in the colander, roasted hot so the edges go
+                shattery.
+              </p>
+              <ul class="card-ingredients">
+                <li>Baby potatoes</li>
+                <li>Garlic</li>
+                <li>Rosemary</li>
+              </ul>
+              <p class="card-note card-note--rotate-r">&ldquo;Rough them up &mdash; that's the crunch.&rdquo;</p>
+            </article>
+
+            <article class="index-card" data-category="dessert">
+              <div class="card-tab card-tab--dessert"><span>Dessert</span></div>
+              <div class="card-punch"></div>
+              <span class="card-icon" aria-hidden="true">&#127850;</span>
+              <h3 class="card-title">Brown Butter Chocolate Chip Cookies</h3>
+              <p class="card-meta">30 min &middot; makes 18 &middot; two bowls</p>
+              <p class="card-desc">
+                Butter browned until it smells like hazelnuts, chilled dough, flaky
+                salt on top.
+              </p>
+              <ul class="card-ingredients">
+                <li>Brown butter</li>
+                <li>Dark chocolate</li>
+                <li>Flaky salt</li>
+              </ul>
+              <p class="card-note card-note--rotate-l">&ldquo;Under-bake it. Trust me.&rdquo;</p>
+            </article>
+
+            <article class="index-card" data-category="soups">
+              <div class="card-tab card-tab--soups"><span>Soups</span></div>
+              <div class="card-punch"></div>
+              <span class="card-icon" aria-hidden="true">&#127805;</span>
+              <h3 class="card-title">Roasted Tomato &amp; Basil Soup</h3>
+              <p class="card-meta">45 min &middot; serves 4 &middot; blender needed</p>
+              <p class="card-desc">
+                Tomatoes roasted until they collapse, blitzed with cream and torn
+                basil, grilled cheese on standby.
+              </p>
+              <ul class="card-ingredients">
+                <li>Roma tomatoes</li>
+                <li>Heavy cream</li>
+                <li>Fresh basil</li>
+              </ul>
+              <p class="card-note card-note--rotate-r">&ldquo;Roast past the point of pretty.&rdquo;</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about-note">
+          <span class="washi" aria-hidden="true"></span>
+          <p class="stamp-label">Why a box, not a feed</p>
+          <h2>A recipe you can hold onto.</h2>
+          <p>
+            Every card here has been cooked enough times to earn a stain and a margin
+            note. No box says a recipe is finished &mdash; just filed, ready to be pulled
+            back out and changed a little the next time.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="floor">
+      <div class="container floor-row">
+        <span>The Recipe Box &mdash; ten cards, refiled often.</span>
+        <span>Handle with (slightly) buttery hands.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
