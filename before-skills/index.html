@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flavor Haven | Recipe Collection</title>
+    <meta
+      name="description"
+      content="A curated collection of 10 delicious recipes from quick breakfasts to cozy dinners."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">🍽️</span>
+          <span>Flavor Haven</span>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#featured">Featured</a>
+          <a href="#recipes">Recipes</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="featured">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Fresh favorites</p>
+            <h1>Recipes for every craving.</h1>
+            <p class="lead">
+              Discover comforting classics, vibrant bowls, and easy weeknight meals
+              that bring people together.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#recipes">Explore recipes</a>
+              <a class="button secondary" href="#about">Learn more</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-label="Recipe highlight image">
+            <div class="floating-card">
+              <span class="chip">Popular this week</span>
+              <h2>Sunset Chicken Bowl</h2>
+              <p>25 min • Mediterranean</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recipe-section" id="recipes">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">10 recipes</p>
+            <h2>Cook your next favorite meal</h2>
+          </div>
+
+          <div class="recipes-grid">
+            <article class="recipe-card">
+              <img
+                src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=80"
+                alt="Spaghetti Carbonara"
+              />
+              <div class="recipe-content">
+                <div class="meta-row">
+                  <span class="tag">Italian</span>
+                  <span>30 min</span>
+                </div>
+                <h3>Spaghetti Carbonara</h3>
+                <p>
+                  Silky pasta tossed with eggs, pecorino, crispy pancetta, and cracked
+                  black pepper.
+                </p>
+                <ul>
+                  <li>Spaghetti</li>
+                  <li>Pancetta</li>
+                  <li>Egg yolks</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="recipe-card">
+              <img
+                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80"
+                alt="Veggie Buddha Bowl"
+              />
+              <div class="recipe-content">
+                <div class="meta-row">
+                  <span class="tag">Vegan</span>
+                  <span>20 min</span>
+                </div>
+                <h3>Veggie Buddha Bowl</h3>
+                <p>
+                  A colorful mix of grains, greens, roasted vegetables, and a creamy
+                  tahini drizzle.
+                </p>
+                <ul>
+                  <li>Quinoa</li>
+                  <li>Chickpeas</li>
+                  <li>Avocado</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="recipe-card">
+              <img
+                src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=900&q=80"
+                alt="Chicken Tikka Masala"
+              />
+              <div class="recipe-content">
+                <div class="meta-row">
+                  <span class="tag">Indian-inspired</span>
+                  <span>40 min</span>
+                </div>
+                <h3>Chicken Tikka Masala</h3>
+                <p>
+                  Tender marinated chicken simmered in a spiced tomato cream sauce that
+                  tastes like comfort.
+                </p>
+                <ul>
+                  <li>Chicken thighs</li>
+                  <li>Tomato puree</li>
+                  <li>Garlic</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="recipe-card">
+              <img
+                src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=80"
+                alt="Lemon Herb Salmon"
+              />
+              <div class="recipe-content">
+                <div class="meta-row">
+                  <span class="tag">Seafood</span>
+                  <span>25 min</span>
+                </div>
+                <h3>Lemon Herb Salmon</h3>
+                <p>
+                  Crisp-edged salmon with bright lemon, dill, and garlic for a fresh,
+                  nourishing finish.
+                </p>
+                <ul>
+                  <li>Salmon</li>
+                  <li>Lemon</li>
+                  <li>Fresh herbs</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="recipe-card">
+              <img
+                src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80"
+                alt="Mushroom Risotto"
+              />
+              <div class="recipe-content">
+                <div class="meta-row">
+                  <span class="tag">Comfort</span>
+                  <span>35 min</span>
+                </div>
+                <h3>Mushroom Risotto</h3>
+                <p>
+                  Creamy arborio rice layered with earthy mushrooms, parmesan, and a
+                  touch of thyme.
+                </p>
+                <ul>
+                  <li>Arborio rice</li>
+                  <li>Mushrooms</li>
+                  <li>Parmesan</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="recipe-card">
+              <img
+                src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=900&q=80"
+                alt="Chicken Tacos"
+              />
+              <div class="recipe-content">
+                <div class="meta-row">
+                  <span class="tag">Mexican</span>
+                  <span>20 min</span>
+                </div>
+                <h3>Chicken Tacos</h3>
+                <p>
+                  Smoky spiced chicken tucked into warm tortillas with salsa, lime, and
+                  crunchy slaw.
+                </p>
+                <ul>
+                  <li>Chicken breast</li>
+                  <li>Tortillas</li>
+                  <li>Cabbage</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="recipe-card">
+              <img
+                src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=900&q=80"
+                alt="Berry Pancakes"
+              />
+              <div class="recipe-content">
+                <div class="meta-row">
+                  <span class="tag">Breakfast</span>
+                  <span>15 min</span>
+                </div>
+                <h3>Berry Pancakes</h3>
+                <p>
+                  Fluffy stack with a blueberry burst, maple drizzle, and a hint of
+                  vanilla.
+                </p>
+                <ul>
+                  <li>Flour</li>
+                  <li>Blueberries</li>
+                  <li>Maple syrup</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="recipe-card">
+              <img
+                src="https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=900&q=80"
+                alt="Classic Caesar Salad"
+              />
+              <div class="recipe-content">
+                <div class="meta-row">
+                  <span class="tag">Fresh</span>
+                  <span>10 min</span>
+                </div>
+                <h3>Classic Caesar Salad</h3>
+                <p>
+                  Romaine, parmesan, lemony dressing, and crunchy croutons make this a
+                  timeless favorite.
+                </p>
+                <ul>
+                  <li>Romaine</li>
+                  <li>Parmesan</li>
+                  <li>Croutons</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="recipe-card">
+              <img
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80"
+                alt="Greek Pasta Salad"
+              />
+              <div class="recipe-content">
+                <div class="meta-row">
+                  <span class="tag">Mediterranean</span>
+                  <span>18 min</span>
+                </div>
+                <h3>Greek Pasta Salad</h3>
+                <p>
+                  A chilled bowl of pasta with cucumbers, olives, tomatoes, feta, and a
+                  zesty vinaigrette.
+                </p>
+                <ul>
+                  <li>Pasta</li>
+                  <li>Feta</li>
+                  <li>Olives</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="recipe-card">
+              <img
+                src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80"
+                alt="Spicy Black Bean Chili"
+              />
+              <div class="recipe-content">
+                <div class="meta-row">
+                  <span class="tag">Cozy</span>
+                  <span>45 min</span>
+                </div>
+                <h3>Spicy Black Bean Chili</h3>
+                <p>
+                  Hearty beans, tomatoes, peppers, and warm spices simmered into a rich,
+                  satisfying pot.
+                </p>
+                <ul>
+                  <li>Black beans</li>
+                  <li>Tomatoes</li>
+                  <li>Chili powder</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about-box">
+          <div>
+            <p class="eyebrow">Why we cook</p>
+            <h2>Simple ingredients, memorable meals.</h2>
+          </div>
+          <p>
+            From quick lunches to slow-simmered suppers, these recipes are designed to
+            feel approachable, nourishing, and full of flavor.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
