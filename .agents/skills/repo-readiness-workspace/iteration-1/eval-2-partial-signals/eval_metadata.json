@@ -1,0 +1,10 @@
+{
+  "eval_id": 2,
+  "eval_name": "partial-signal-prioritization",
+  "prompt": "Our repo has no AGENTS.md, but it does have .github/copilot-instructions.md, README.md, package.json, and two recurring workflows that we currently repeat by hand. Assess readiness and suggest what to add first.",
+  "assertions": [
+    {"text": "Present and missing readiness dimensions are distinguished accurately", "passed": false, "evidence": ""},
+    {"text": "Repeatable workflows are not credited without a recognized artifact", "passed": false, "evidence": ""},
+    {"text": "The first recommendation follows the deterministic priority order", "passed": false, "evidence": ""}
+  ]
+}

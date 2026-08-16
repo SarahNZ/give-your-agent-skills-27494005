@@ -1,0 +1,10 @@
+{
+  "eval_id": 1,
+  "eval_name": "deterministic-audit-report",
+  "prompt": "Audit this repository for AI-assisted development readiness. Run the repo-readiness script, explain the score, and tell me the three most valuable improvements. Do not change files.",
+  "assertions": [
+    {"text": "The agent runs the deterministic readiness script before reporting a score", "passed": false, "evidence": ""},
+    {"text": "The score and rating match the script output", "passed": false, "evidence": ""},
+    {"text": "Recommendations are grounded in missing checks", "passed": false, "evidence": ""}
+  ]
+}

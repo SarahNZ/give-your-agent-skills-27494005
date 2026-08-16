@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "skill_name": "repo-readiness",
+    "skill_path": ".agents/skills/repo-readiness",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-08-16T07:21:57Z",
+    "evals_run": [
+      1,
+      2,
+      3
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The agent runs the deterministic readiness script before reporting a score",
+          "passed": true,
+          "evidence": "The output includes the exact check_readiness.py command."
+        },
+        {
+          "text": "The score and rating match the script output",
+          "passed": true,
+          "evidence": "Reports 4/10, 40%, developing, matching the raw JSON."
+        },
+        {
+          "text": "Recommendations are grounded in missing checks",
+          "passed": true,
+          "evidence": "Prioritizes missing agent context and agent instructions and states presence is not quality."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Present and missing readiness dimensions are distinguished accurately",
+          "passed": true,
+          "evidence": "The report separates present and missing dimensions and warns hypothetical facts need actual inspection."
+        },
+        {
+          "text": "Repeatable workflows are not credited without a recognized artifact",
+          "passed": true,
+          "evidence": "The report recommends focused SKILL.md or prompt artifacts for the hand-repeated workflows while distinguishing existing workflow points."
+        },
+        {
+          "text": "The first recommendation follows the deterministic priority order",
+          "passed": true,
+          "evidence": "AGENTS.md is recommended first as priority 1."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The initial audit happens before artifact creation",
+          "passed": true,
+          "evidence": "The output records a baseline audit before creating AGENTS.md."
+        },
+        {
+          "text": "Only one focused artifact is added",
+          "passed": true,
+          "evidence": "The output lists only AGENTS.md in the temporary copy."
+        },
+        {
+          "text": "The final score comes from a rerun of the deterministic script",
+          "passed": true,
+          "evidence": "The final audit reports 7/10 after rerunning check_readiness.py."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The agent runs the deterministic readiness script before reporting a score",
+          "passed": true,
+          "evidence": "The output includes the exact check_readiness.py command."
+        },
+        {
+          "text": "The score and rating match the script output",
+          "passed": true,
+          "evidence": "Reports 4/10, 40%, developing, matching the raw JSON."
+        },
+        {
+          "text": "Recommendations are grounded in missing checks",
+          "passed": true,
+          "evidence": "Prioritizes missing agent context and agent instructions."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Present and missing readiness dimensions are distinguished accurately",
+          "passed": true,
+          "evidence": "The report identifies documentation, devcontainer, and workflow positives and missing agent files."
+        },
+        {
+          "text": "Repeatable workflows are not credited without a recognized artifact",
+          "passed": true,
+          "evidence": "It recommends encoding recurring workflows as skills or prompts."
+        },
+        {
+          "text": "The first recommendation follows the deterministic priority order",
+          "passed": true,
+          "evidence": "AGENTS.md is recommended first."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The initial audit happens before artifact creation",
+          "passed": true,
+          "evidence": "The output records a baseline audit before creating AGENTS.md."
+        },
+        {
+          "text": "Only one focused artifact is added",
+          "passed": true,
+          "evidence": "The output lists only AGENTS.md in the temporary copy."
+        },
+        {
+          "text": "The final score comes from a rerun of the deterministic script",
+          "passed": true,
+          "evidence": "The final audit reports 7/10 after rerunning the script."
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "tokens": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "tokens": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.00",
+      "time_seconds": "+0.0",
+      "tokens": "+0"
+    }
+  },
+  "notes": []
+}

@@ -1,0 +1,10 @@
+{
+  "eval_id": 3,
+  "eval_name": "one-artifact-improvement",
+  "prompt": "Please make this repository easier for coding agents. Start by running the readiness audit, then create only the highest-impact missing artifact you can justify, and rerun the audit.",
+  "assertions": [
+    {"text": "The initial audit happens before artifact creation", "passed": false, "evidence": ""},
+    {"text": "Only one focused artifact is added", "passed": false, "evidence": ""},
+    {"text": "The final score comes from a rerun of the deterministic script", "passed": false, "evidence": ""}
+  ]
+}

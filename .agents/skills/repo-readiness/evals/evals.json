@@ -1,0 +1,38 @@
+{
+  "skill_name": "repo-readiness",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Audit this repository for AI-assisted development readiness. Run the repo-readiness script, explain the score, and tell me the three most valuable improvements. Do not change files.",
+      "expected_output": "The agent runs the deterministic script, reports its exact score and evidence, explains the score's limits, and prioritizes missing signals without inventing a score.",
+      "files": [],
+      "expectations": [
+        "The agent runs scripts/check_readiness.py before reporting a score",
+        "The reported score, max score, percentage, and rating match the script output",
+        "Recommendations are based on missing checks and do not claim that filename presence proves quality"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Our repo has no AGENTS.md, but it does have .github/copilot-instructions.md, README.md, package.json, and two recurring workflows that we currently repeat by hand. Assess readiness and suggest what to add first.",
+      "expected_output": "The agent distinguishes present signals from absent repeatable workflow artifacts and recommends an accurate, focused workflow artifact rather than adding empty marker files.",
+      "files": [],
+      "expectations": [
+        "The agent identifies agent instructions, documentation, and development automation as present signals",
+        "The agent treats repeatable workflows as missing unless SKILL.md or prompt files are actually present",
+        "The first recommendation is grounded in the script's priority ordering"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Please make this repository easier for coding agents. Start by running the readiness audit, then create only the highest-impact missing artifact you can justify, and rerun the audit.",
+      "expected_output": "The agent audits first, asks or uses repository context appropriately, creates one focused artifact, reruns the script, and reports the before/after deterministic scores.",
+      "files": [],
+      "expectations": [
+        "The initial audit occurs before any artifact is created",
+        "Only one focused artifact is added unless the user explicitly requests more",
+        "The final score is produced by a rerun of scripts/check_readiness.py"
+      ]
+    }
+  ]
+}
